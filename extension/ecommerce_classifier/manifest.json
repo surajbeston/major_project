@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Product Classifier",
+  "version": "1.0",
+  "description": "Classifies product based on name and description.",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/axios.js",
+        "scripts/content.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "permissions": ["tabs", "scripting", "storage", "activeTab"],
+  "host_permissions": [
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "scripts/service-worker.js"
+  }
+}

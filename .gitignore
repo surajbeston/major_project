@@ -1,0 +1,6 @@
+env/
+ecommerce_classifier/env
+__pycache__
+ecommerce_classifier/ecommerce_classifier/__pycache__
+ecommerce_classifier/__pycache__
+ecommerce_classifier/main/__pycache__
